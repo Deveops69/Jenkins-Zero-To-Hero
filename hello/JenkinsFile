@@ -7,7 +7,7 @@ pipeline {
       }
       steps {
         sh 'mvn --install'
-        sh 'sh 'mvn --install''
+        sh 'java-hello.java'
       }
     }
     stage('Front-end') {
