@@ -8,11 +8,16 @@ pipeline {
         sh 'node --version'
       }
     }
-stage('Test2') {
+stage('helloworld----') {
+      agent {
+        docker { image 'node:16-alpine' }
+      }
       steps {
-        print 'hello-world'
+         print 'hello-world'
       }
     }
+
+ 
   }
 
 }
